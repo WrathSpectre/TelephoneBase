@@ -2,14 +2,6 @@
 
 /*************************************  User input  *************************************/
 
-void helpArgument(char *argv[])
-{
-    if(strcmp(argv[1], "-h") == 0)
-        helpPrompt(NULL);
-    else
-        helpPrompt("Podano niewlasciwy argument.");
-}
-
 Params mainArguments(char *argv[])
 {
     Params params;
@@ -61,6 +53,14 @@ int isNumberValid(char *phoneNumber)
     }
 
     return 0;
+}
+
+void helpArgument(char *argv[])
+{
+    if(strcmp(argv[1], "-h") == 0)
+        helpPrompt(NULL);
+    else
+        helpPrompt("Podano niewlasciwy argument.");
 }
 
 /*************************************  List management  *************************************/

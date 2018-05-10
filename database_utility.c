@@ -210,5 +210,5 @@ void databaseSearch(Node *head, char *phoneNumber)
     }
 
     if(result == 0)
-        puts("Podany numer nieznajduje sie w bazie.");
+        puts("Podany wzor numer nie znajduje sie w bazie.");
 }
